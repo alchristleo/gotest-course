@@ -14,9 +14,7 @@ const (
 )
 
 func Swap(numbers []int, i int) {
-		tmp := numbers[i]
-		numbers[i] = numbers[i+1]
-		numbers[i+1] = tmp
+        numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
 }
 
 func BubbleSort(numbers []int) {
